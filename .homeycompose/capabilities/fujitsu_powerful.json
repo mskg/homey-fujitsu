@@ -1,0 +1,19 @@
+{
+    "type": "boolean",
+    "uiComponent": "toggle",
+    "title": {
+        "en": "Powerful"
+    },
+    "desc": {
+        "en": "Powerful"
+    },
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "insightsTitleTrue": {
+        "en": "Powerful turned on"
+    },
+    "insightsTitleFalse": {
+        "en": "Powerful turned off"
+    }
+}

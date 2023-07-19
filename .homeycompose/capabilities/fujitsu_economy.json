@@ -1,0 +1,19 @@
+{
+    "type": "boolean",
+    "uiComponent": "toggle",
+    "title": {
+        "en": "Economy"
+    },
+    "desc": {
+        "en": "Economy"
+    },
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "insightsTitleTrue": {
+        "en": "Economy turned on"
+    },
+    "insightsTitleFalse": {
+        "en": "Economy turned off"
+    }
+}

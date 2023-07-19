@@ -1,0 +1,78 @@
+{
+  "name": {
+    "en": "Fujitsu AIRSTAGE WJ3E"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "target_temperature",
+    "measure_temperature",
+    "onoff",
+    "fujitsu_economy",
+    "fujitsu_powerful",
+    "fujitsu_fan_ctrl",
+    "fujitsu_low_noise",
+    "fujitsu_outdoor_tmp"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "pair": [
+    {
+      "id": "enter_ip"
+    },
+    {
+      "id": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      },
+      "template": "list_devices"
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "small": "/drivers/wj3e/assets/images/small.png",
+    "large": "/drivers/wj3e/assets/images/large.png",
+    "xlarge": "/drivers/wj3e/assets/images/xlarge.png"
+  },
+  "settings": [
+    {
+      "id": "ip",
+      "type": "text",
+      "label": {
+        "en": "IP Address"
+      },
+      "value": "192.168.249.116",
+      "hint": {
+        "en": "The internal IP address of the WLAN module."
+      }
+    },
+    {
+      "id": "mac",
+      "type": "text",
+      "label": {
+        "en": "MAC Address"
+      },
+      "value": "505A6531A0DD",
+      "hint": {
+        "en": "The MAC address of the WLAN module."
+      }
+    },
+    {
+      "id": "interval",
+      "type": "number",
+      "label": {
+        "en": "Refresh Interval"
+      },
+      "value": 60,
+      "hint": {
+        "en": "The refresh interval in seconds"
+      }
+    }
+  ]
+}

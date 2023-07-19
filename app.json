@@ -1,0 +1,191 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "app.mskg.fujitsu-airstage",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Fujitsu AIRSTAGE"
+  },
+  "description": {
+    "en": "Adds support for MyBrand devices."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Markus Kling",
+    "email": "markus.kling@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Fujitsu AIRSTAGE WJ3E"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "target_temperature",
+        "measure_temperature",
+        "onoff",
+        "fujitsu_economy",
+        "fujitsu_powerful",
+        "fujitsu_fan_ctrl",
+        "fujitsu_low_noise",
+        "fujitsu_outdoor_tmp"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "pair": [
+        {
+          "id": "enter_ip"
+        },
+        {
+          "id": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "template": "list_devices"
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "/drivers/wj3e/assets/images/small.png",
+        "large": "/drivers/wj3e/assets/images/large.png",
+        "xlarge": "/drivers/wj3e/assets/images/xlarge.png"
+      },
+      "settings": [
+        {
+          "id": "ip",
+          "type": "text",
+          "label": {
+            "en": "IP Address"
+          },
+          "value": "192.168.100.105",
+          "hint": {
+            "en": "The internal IP address of the WLAN module."
+          }
+        },
+        {
+          "id": "interval",
+          "type": "number",
+          "label": {
+            "en": "Refresh Interval"
+          },
+          "value": 60,
+          "hint": {
+            "en": "The refresh interval in seconds"
+          }
+        }
+      ],
+      "id": "wj3e"
+    }
+  ],
+  "capabilities": {
+    "fujitsu_economy": {
+      "type": "boolean",
+      "uiComponent": "toggle",
+      "title": {
+        "en": "Economy"
+      },
+      "desc": {
+        "en": "Economy"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Economy turned on"
+      },
+      "insightsTitleFalse": {
+        "en": "Economy turned off"
+      }
+    },
+    "fujitsu_fan_ctrl": {
+      "type": "boolean",
+      "uiComponent": "toggle",
+      "title": {
+        "en": "Energy saving fan"
+      },
+      "desc": {
+        "en": "Energy saving fan"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Energy saving fan turned on"
+      },
+      "insightsTitleFalse": {
+        "en": "Energy saving fan turned off"
+      }
+    },
+    "fujitsu_low_noise": {
+      "type": "boolean",
+      "uiComponent": "toggle",
+      "title": {
+        "en": "Outdoor unit low noise"
+      },
+      "desc": {
+        "en": "Outdoor unit low noise"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Outdoor unit low noise turned on"
+      },
+      "insightsTitleFalse": {
+        "en": "Outdoor unit low noise turned off"
+      }
+    },
+    "fujitsu_outdoor_tmp": {
+      "type": "number",
+      "uiComponent": "sensor",
+      "title": {
+        "en": "Outdoor temperature"
+      },
+      "desc": {
+        "en": "Outdoor temperature"
+      },
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "insights": true
+    },
+    "fujitsu_powerful": {
+      "type": "boolean",
+      "uiComponent": "toggle",
+      "title": {
+        "en": "Powerful"
+      },
+      "desc": {
+        "en": "Powerful"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Powerful turned on"
+      },
+      "insightsTitleFalse": {
+        "en": "Powerful turned off"
+      }
+    }
+  }
+}

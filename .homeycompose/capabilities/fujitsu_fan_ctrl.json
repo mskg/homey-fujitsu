@@ -1,0 +1,19 @@
+{
+    "type": "boolean",
+    "uiComponent": "toggle",
+    "title": {
+        "en": "Energy saving fan"
+    },
+    "desc": {
+        "en": "Energy saving fan"
+    },
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "insightsTitleTrue": {
+        "en": "Energy saving fan turned on"
+    },
+    "insightsTitleFalse": {
+        "en": "Energy saving fan turned off"
+    }
+}

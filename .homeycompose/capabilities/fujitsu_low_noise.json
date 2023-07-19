@@ -1,0 +1,19 @@
+{
+    "type": "boolean",
+    "uiComponent": "toggle",
+    "title": {
+        "en": "Outdoor unit low noise"
+    },
+    "desc": {
+        "en": "Outdoor unit low noise"
+    },
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "insightsTitleTrue": {
+        "en": "Outdoor unit low noise turned on"
+    },
+    "insightsTitleFalse": {
+        "en": "Outdoor unit low noise turned off"
+    }
+}

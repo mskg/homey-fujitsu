@@ -1,0 +1,14 @@
+{
+    "pair": {
+        "start": {
+            "ip": "IP address",
+            "mac": "MAC",
+            "error": "An error has occurred.",
+            "intro": "Enter device IP address and MAC.",
+            "invalidIP": "Please enter a valid IPv4 address, e.g. 192.168.1.10",
+            "required": "Required value.",
+            "saveSettings": "Save settings",
+            "title": "Connect device..."
+        }
+    }
+}

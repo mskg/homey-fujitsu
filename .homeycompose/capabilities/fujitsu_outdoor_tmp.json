@@ -1,0 +1,14 @@
+{
+    "type": "number",
+    "uiComponent": "sensor",
+    "title": {
+        "en": "Outdoor temperature"
+    },
+    "desc": {
+        "en": "Outdoor temperature"
+    },
+    "decimals": 2,
+    "getable": true,
+    "setable": false,
+    "insights": true
+}

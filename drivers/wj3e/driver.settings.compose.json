@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "ip",
+    "type": "text",
+    "label": { "en": "IP Address" },
+    "value": "192.168.100.105",
+    "hint": { "en": "The internal IP address of the WLAN module." }
+  },
+  {
+    "id": "interval",
+    "type": "number",
+    "label": { "en": "Refresh Interval" },
+    "value": 60,
+    "hint": { "en": "The refresh interval in seconds" }
+  }
+]
