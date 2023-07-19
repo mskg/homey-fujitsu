@@ -11,7 +11,13 @@
     "fujitsu_powerful",
     "fujitsu_fan_ctrl",
     "fujitsu_low_noise",
-    "fujitsu_outdoor_tmp"
+    "fujitsu_outdoor_tmp",
+
+    "fujitsu_airflow_vertical",
+    "fujitsu_operation_mode",
+    "fujitsu_swing_vertical",
+
+    "fujitsu_fan_speed"
   ],
   "platforms": [
     "local"

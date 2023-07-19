@@ -40,7 +40,11 @@
         "fujitsu_powerful",
         "fujitsu_fan_ctrl",
         "fujitsu_low_noise",
-        "fujitsu_outdoor_tmp"
+        "fujitsu_outdoor_tmp",
+        "fujitsu_airflow_vertical",
+        "fujitsu_operation_mode",
+        "fujitsu_swing_vertical",
+        "fujitsu_fan_speed"
       ],
       "platforms": [
         "local"
@@ -76,7 +80,7 @@
           "label": {
             "en": "IP Address"
           },
-          "value": "192.168.100.105",
+          "value": "192.168.1.1",
           "hint": {
             "en": "The internal IP address of the WLAN module."
           }
@@ -97,6 +101,45 @@
     }
   ],
   "capabilities": {
+    "fujitsu_airflow_vertical": {
+      "type": "enum",
+      "uiComponent": "picker",
+      "title": {
+        "en": "Airflow vertical"
+      },
+      "desc": {
+        "en": "Airflow vertical"
+      },
+      "values": [
+        {
+          "id": "1",
+          "title": {
+            "en": "Top"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Lower top"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Upper bottom"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Bottom"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "insights": true
+    },
     "fujitsu_economy": {
       "type": "boolean",
       "uiComponent": "toggle",
@@ -135,6 +178,51 @@
         "en": "Energy saving fan turned off"
       }
     },
+    "fujitsu_fan_speed": {
+      "type": "enum",
+      "uiComponent": "picker",
+      "title": {
+        "en": "Fan speed"
+      },
+      "desc": {
+        "en": "Fan speed"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Quiet"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Low"
+          }
+        },
+        {
+          "id": "8",
+          "title": {
+            "en": "Medium"
+          }
+        },
+        {
+          "id": "11",
+          "title": {
+            "en": "High"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "insights": true
+    },
     "fujitsu_low_noise": {
       "type": "boolean",
       "uiComponent": "toggle",
@@ -153,6 +241,51 @@
       "insightsTitleFalse": {
         "en": "Outdoor unit low noise turned off"
       }
+    },
+    "fujitsu_operation_mode": {
+      "type": "enum",
+      "uiComponent": "picker",
+      "title": {
+        "en": "Operation mode"
+      },
+      "desc": {
+        "en": "Operation mode"
+      },
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Cool"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Dry"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Fan"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Heat"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "insights": true
     },
     "fujitsu_outdoor_tmp": {
       "type": "number",
@@ -185,6 +318,25 @@
       },
       "insightsTitleFalse": {
         "en": "Powerful turned off"
+      }
+    },
+    "fujitsu_swing_vertical": {
+      "type": "boolean",
+      "uiComponent": "toggle",
+      "title": {
+        "en": "Swing vertical"
+      },
+      "desc": {
+        "en": "Swing vertical"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Swing vertical turned on"
+      },
+      "insightsTitleFalse": {
+        "en": "Swing vertical turned off"
       }
     }
   }

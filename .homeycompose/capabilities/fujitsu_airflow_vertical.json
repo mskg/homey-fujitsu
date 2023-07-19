@@ -1,0 +1,39 @@
+{
+    "type": "enum",
+    "uiComponent": "picker",
+    "title": {
+        "en": "Airflow vertical"
+    },
+    "desc": {
+        "en": "Airflow vertical"
+    },
+    "values": [
+        {
+            "id": "1",
+            "title": {
+                "en": "Top"
+            }
+        },
+        {
+            "id": "2",
+            "title": {
+                "en": "Lower top"
+            }
+        },
+        {
+            "id": "3",
+            "title": {
+                "en": "Upper bottom"
+            }
+        },
+        {
+            "id": "4",
+            "title": {
+                "en": "Bottom"
+            }
+        }
+    ],
+    "getable": true,
+    "setable": true,
+    "insights": true
+}

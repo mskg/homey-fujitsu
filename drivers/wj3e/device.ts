@@ -20,6 +20,12 @@ class MyDevice extends Homey.Device {
     this.registerCapabilityListener('fujitsu_low_noise', this.createOnOff("ou_low_noise").bind(this));
     this.registerCapabilityListener('fujitsu_powerful', this.createOnOff("iu_powerful").bind(this));
 
+    this.registerCapabilityListener('fujitsu_swing_vertical', this.createOnOff("iu_af_swg_vrt").bind(this));
+    this.registerCapabilityListener('fujitsu_airflow_vertical', this.createAny("iu_af_dir_vrt").bind(this));
+
+    this.registerCapabilityListener('fujitsu_operation_mode', this.createAny("iu_op_mode").bind(this));
+    this.registerCapabilityListener('fujitsu_fan_speed', this.createAny("iu_fan_spd").bind(this));
+    
     this.registerCapabilityListener('target_temperature', this.onTargetTemperature.bind(this))
   }
 
@@ -46,6 +52,12 @@ class MyDevice extends Homey.Device {
       this.setCapabilityValue("fujitsu_fan_ctrl", status.value.iu_fan_ctrl == "1");
       this.setCapabilityValue("fujitsu_low_noise", status.value.ou_low_noise == "1");
       this.setCapabilityValue("fujitsu_powerful", status.value.iu_powerful == "1");
+      
+      this.setCapabilityValue("fujitsu_swing_vertical", status.value.iu_af_swg_vrt == "1");
+      this.setCapabilityValue("fujitsu_airflow_vertical", status.value.iu_af_dir_vrt);
+
+      this.setCapabilityValue("fujitsu_operation_mode", status.value.iu_op_mode);
+      this.setCapabilityValue("fujitsu_fan_speed", status.value.iu_fan_spd);
 
       // outside temperature
       this.setCapabilityValue("measure_temperature", (((parseFloat(status.value.iu_indoor_tmp) / 100) - 32) * 5 / 9));
@@ -73,6 +85,26 @@ class MyDevice extends Homey.Device {
     }
     catch (e) {
       this.error(e);
+    }
+  }
+
+  createAny(setting: string) {
+    return async (value: any, _opts: any) => {
+      const settings = this.getSettings();
+      const data = this.getData();
+
+      try {
+        const result = await sendCommand(settings.ip, data.id, {
+          [setting]: value,
+        });
+
+        if (result?.result != "OK") {
+          console.error("failed to set", setting, result);
+        }
+      }
+      catch (e) {
+        this.error(e);
+      }
     }
   }
 

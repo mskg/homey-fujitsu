@@ -52,7 +52,12 @@ type Status = {
         "iu_economy": StringBoolean,
         "iu_fan_ctrl": StringBoolean,
         "iu_powerful": StringBoolean,
-        "ou_low_noise": StringBoolean
+        "ou_low_noise": StringBoolean,
+        "iu_af_swg_vrt": StringBoolean,
+        "iu_af_dir_vrt": string,
+        "iu_fan_spd": string,
+        "iu_min_heat": string,
+        "iu_op_mode": string
     },
 
     "read_res": string,
@@ -80,7 +85,12 @@ export async function getStatus(host: string, mac: string): Promise<Status> {
                 "iu_economy",
                 "iu_fan_ctrl",
                 "iu_powerful",
-                "ou_low_noise"
+                "ou_low_noise",
+                "iu_op_mode",
+                "iu_min_heat",
+                "iu_fan_spd",
+                "iu_af_dir_vrt",
+                "iu_af_swg_vrt"
             ]
         });
 }

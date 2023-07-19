@@ -1,0 +1,19 @@
+{
+    "type": "boolean",
+    "uiComponent": "toggle",
+    "title": {
+        "en": "Swing vertical"
+    },
+    "desc": {
+        "en": "Swing vertical"
+    },
+    "getable": true,
+    "setable": true,
+    "insights": true,
+    "insightsTitleTrue": {
+        "en": "Swing vertical turned on"
+    },
+    "insightsTitleFalse": {
+        "en": "Swing vertical turned off"
+    }
+}
