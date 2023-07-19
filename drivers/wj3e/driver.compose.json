@@ -47,20 +47,9 @@
       "label": {
         "en": "IP Address"
       },
-      "value": "192.168.249.116",
+      "value": "192.168.1.1",
       "hint": {
         "en": "The internal IP address of the WLAN module."
-      }
-    },
-    {
-      "id": "mac",
-      "type": "text",
-      "label": {
-        "en": "MAC Address"
-      },
-      "value": "505A6531A0DD",
-      "hint": {
-        "en": "The MAC address of the WLAN module."
       }
     },
     {
