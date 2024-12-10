@@ -1,0 +1,215 @@
+{
+"triggers": [
+    {
+      "id": "fujitsu_connected_true",
+      "highlight": true,
+      "title": {
+        "en": "Connected"
+      }
+    },
+    {
+      "id": "fujitsu_connected_false",
+      "highlight": true,
+      "title": {
+        "en": "Disconnected"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "fujitsu_airflow_vertical",
+      "title": {
+        "en": "Set Airflow vertical"
+      },
+      "titleFormatted": {
+        "en": "Set Airflow vertical to [[mode]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "mode",
+          "values": [
+            {
+              "id": "1",
+              "title": {
+                "en": "Top"
+              }
+            },
+            {
+              "id": "2",
+              "title": {
+                "en": "Lower top"
+              }
+            },
+            {
+              "id": "3",
+              "title": {
+                "en": "Upper bottom"
+              }
+            },
+            {
+              "id": "4",
+              "title": {
+                "en": "Bottom"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fujitsu_fan_speed",
+      "title": {
+        "en": "Set Fan speed"
+      },
+      "titleFormatted": {
+        "en": "Set Fan speed to [[mode]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "mode",
+          "values": [
+            {
+              "id": "0",
+              "title": {
+                "en": "Auto"
+              }
+            },
+            {
+              "id": "2",
+              "title": {
+                "en": "Quiet"
+              }
+            },
+            {
+              "id": "5",
+              "title": {
+                "en": "Low"
+              }
+            },
+            {
+              "id": "8",
+              "title": {
+                "en": "Medium"
+              }
+            },
+            {
+              "id": "11",
+              "title": {
+                "en": "High"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fujitsu_operation_mode",
+      "title": {
+        "en": "Set Operation mode"
+      },
+      "titleFormatted": {
+        "en": "Set Operation mode to [[mode]]"
+      },
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "mode",
+          "values": [
+            {
+              "id": "0",
+              "title": {
+                "en": "Auto"
+              }
+            },
+            {
+              "id": "1",
+              "title": {
+                "en": "Cool"
+              }
+            },
+            {
+              "id": "2",
+              "title": {
+                "en": "Dry"
+              }
+            },
+            {
+              "id": "3",
+              "title": {
+                "en": "Fan"
+              }
+            },
+            {
+              "id": "4",
+              "title": {
+                "en": "Heat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fujitsu_economy_true",
+      "title": {
+        "en": "Turn Economy on"
+      }
+    },
+    {
+      "id": "fujitsu_economy_false",
+      "title": {
+        "en": "Turn Economy off"
+      }
+    },
+    {
+      "id": "fujitsu_fan_ctrl_true",
+      "title": {
+        "en": "Turn Energy saving fan on"
+      }
+    },
+    {
+      "id": "fujitsu_fan_ctrl_false",
+      "title": {
+        "en": "Turn Energy saving fan off"
+      }
+    },
+    {
+      "id": "fujitsu_low_noise_true",
+      "title": {
+        "en": "Turn Outdoor unit low noise on"
+      }
+    },
+    {
+      "id": "fujitsu_low_noise_false",
+      "title": {
+        "en": "Turn Outdoor unit low noise off"
+      }
+    },
+    {
+      "id": "fujitsu_powerful_true",
+      "title": {
+        "en": "Turn Powerful on"
+      }
+    },
+    {
+      "id": "fujitsu_powerful_false",
+      "title": {
+        "en": "Turn Powerful off"
+      }
+    },
+    {
+      "id": "fujitsu_swing_vertical_true",
+      "title": {
+        "en": "Turn Swing vertical on"
+      }
+    },
+    {
+      "id": "fujitsu_swing_vertical_false",
+      "title": {
+        "en": "Turn Swing vertical off"
+      }
+    }
+  ]
+}

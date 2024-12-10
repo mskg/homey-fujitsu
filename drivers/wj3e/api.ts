@@ -1,6 +1,6 @@
-//@ts-ignore
-import fetch from 'node-fetch';
+import axios from "axios";
 
+//@ts-ignore
 function baseCmd(mac: string, level: "03" | "02") {
     return {
         "device_id": mac,
@@ -12,22 +12,15 @@ function baseCmd(mac: string, level: "03" | "02") {
 }
 
 async function sendToDevice<T>(host: string, operation: string, body: any): Promise<T> {
-    const request = {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
-    };
-
     const url = `http://${host}/${operation}`;
     console.log("Sending", url, body);
 
-    const fetchResponse = await fetch(url, request);
-    const data = await fetchResponse.json();
+    const response = await axios.post(
+        url, 
+        JSON.stringify(body)
+    );
 
-    return data as T;
+    return response.data as T;
 }
 
 export async function sendCommand(host: string, mac: string, cmd: any): Promise<any> {

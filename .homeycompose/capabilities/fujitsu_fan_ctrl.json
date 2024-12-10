@@ -1,6 +1,6 @@
 {
     "type": "boolean",
-    "uiComponent": "toggle",
+    "uiComponent": "button",
     "title": {
         "en": "Energy saving fan"
     },

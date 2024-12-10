@@ -17,8 +17,14 @@
     "fujitsu_operation_mode",
     "fujitsu_swing_vertical",
 
-    "fujitsu_fan_speed"
+    "fujitsu_fan_speed",
+    "fujitsu_connected"
   ],
+  "capabilitiesOptions": {
+    "target_temperature": {
+      "min": 0
+    }
+  },
   "platforms": [
     "local"
   ],

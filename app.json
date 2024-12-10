@@ -26,6 +26,320 @@
     "name": "Markus Kling",
     "email": "markus.kling@gmail.com"
   },
+  "flow": {
+    "triggers": [
+      {
+        "id": "fujitsu_connected_true",
+        "highlight": true,
+        "title": {
+          "en": "Connected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_connected_false",
+        "highlight": true,
+        "title": {
+          "en": "Disconnected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "fujitsu_airflow_vertical",
+        "title": {
+          "en": "Set Airflow vertical"
+        },
+        "titleFormatted": {
+          "en": "Set Airflow vertical to [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "values": [
+              {
+                "id": "1",
+                "title": {
+                  "en": "Top"
+                }
+              },
+              {
+                "id": "2",
+                "title": {
+                  "en": "Lower top"
+                }
+              },
+              {
+                "id": "3",
+                "title": {
+                  "en": "Upper bottom"
+                }
+              },
+              {
+                "id": "4",
+                "title": {
+                  "en": "Bottom"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_fan_speed",
+        "title": {
+          "en": "Set Fan speed"
+        },
+        "titleFormatted": {
+          "en": "Set Fan speed to [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "values": [
+              {
+                "id": "0",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "2",
+                "title": {
+                  "en": "Quiet"
+                }
+              },
+              {
+                "id": "5",
+                "title": {
+                  "en": "Low"
+                }
+              },
+              {
+                "id": "8",
+                "title": {
+                  "en": "Medium"
+                }
+              },
+              {
+                "id": "11",
+                "title": {
+                  "en": "High"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_operation_mode",
+        "title": {
+          "en": "Set Operation mode"
+        },
+        "titleFormatted": {
+          "en": "Set Operation mode to [[mode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "values": [
+              {
+                "id": "0",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "1",
+                "title": {
+                  "en": "Cool"
+                }
+              },
+              {
+                "id": "2",
+                "title": {
+                  "en": "Dry"
+                }
+              },
+              {
+                "id": "3",
+                "title": {
+                  "en": "Fan"
+                }
+              },
+              {
+                "id": "4",
+                "title": {
+                  "en": "Heat"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_economy_true",
+        "title": {
+          "en": "Turn Economy on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_economy_false",
+        "title": {
+          "en": "Turn Economy off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_fan_ctrl_true",
+        "title": {
+          "en": "Turn Energy saving fan on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_fan_ctrl_false",
+        "title": {
+          "en": "Turn Energy saving fan off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_low_noise_true",
+        "title": {
+          "en": "Turn Outdoor unit low noise on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_low_noise_false",
+        "title": {
+          "en": "Turn Outdoor unit low noise off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_powerful_true",
+        "title": {
+          "en": "Turn Powerful on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_powerful_false",
+        "title": {
+          "en": "Turn Powerful off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_swing_vertical_true",
+        "title": {
+          "en": "Turn Swing vertical on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      },
+      {
+        "id": "fujitsu_swing_vertical_false",
+        "title": {
+          "en": "Turn Swing vertical off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wj3e"
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
       "name": {
@@ -44,8 +358,14 @@
         "fujitsu_airflow_vertical",
         "fujitsu_operation_mode",
         "fujitsu_swing_vertical",
-        "fujitsu_fan_speed"
+        "fujitsu_fan_speed",
+        "fujitsu_connected"
       ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "min": 0
+        }
+      },
       "platforms": [
         "local"
       ],
@@ -140,9 +460,29 @@
       "setable": true,
       "insights": true
     },
+    "fujitsu_connected": {
+      "type": "boolean",
+      "uiComponent": "sensor",
+      "title": {
+        "en": "Connected"
+      },
+      "desc": {
+        "en": "Connected"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Connected"
+      },
+      "insightsTitleFalse": {
+        "en": "Disconnected"
+      },
+      "icon": "/assets/connected.svg"
+    },
     "fujitsu_economy": {
       "type": "boolean",
-      "uiComponent": "toggle",
+      "uiComponent": "button",
       "title": {
         "en": "Economy"
       },
@@ -161,7 +501,7 @@
     },
     "fujitsu_fan_ctrl": {
       "type": "boolean",
-      "uiComponent": "toggle",
+      "uiComponent": "button",
       "title": {
         "en": "Energy saving fan"
       },
@@ -225,7 +565,7 @@
     },
     "fujitsu_low_noise": {
       "type": "boolean",
-      "uiComponent": "toggle",
+      "uiComponent": "button",
       "title": {
         "en": "Outdoor unit low noise"
       },
@@ -299,11 +639,12 @@
       "decimals": 2,
       "getable": true,
       "setable": false,
-      "insights": true
+      "insights": true,
+      "icon": "/assets/temperature.svg"
     },
     "fujitsu_powerful": {
       "type": "boolean",
-      "uiComponent": "toggle",
+      "uiComponent": "button",
       "title": {
         "en": "Powerful"
       },
@@ -322,7 +663,7 @@
     },
     "fujitsu_swing_vertical": {
       "type": "boolean",
-      "uiComponent": "toggle",
+      "uiComponent": "button",
       "title": {
         "en": "Swing vertical"
       },
