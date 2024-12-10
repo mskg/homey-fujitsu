@@ -1,3 +1,3 @@
 # Fujitsu AIRSTAGE
 
-Adds support for MyBrand devices.
+Adds support for Fujitsu Airstage devices.
