@@ -21,8 +21,6 @@ class MyDevice extends Homey.Device {
   async onInit() {
     this.log('Init');
 
-    this.addCapability("fujitsu_connected");
-
     // default capability, has workflows
     this.registerCapabilityListener('onoff', this.createOnOff('iu_onoff').bind(this));
 
